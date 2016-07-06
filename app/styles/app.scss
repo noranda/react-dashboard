@@ -1,9 +1,10 @@
-@import "variables";
 @import "bootstrap";
 @import "font-awesome";
+@import "pikaday";
 
 @import "variables";
 @import "mixins/mixins";
 @import "components/header";
 @import "components/nav";
+@import "components/dashboard";
 @import "elements/search";

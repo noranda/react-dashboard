@@ -37,6 +37,10 @@ module.exports = function(defaults) {
   });
 
   app.import('vendor/bootstrap/bootstrap.js');
+  app.import('vendor/momentjs/moment.js');
+  app.import('vendor/numeraljs/numeral.js');
+  app.import('vendor/pikaday/pikaday.js');
+  app.import('vendor/chartjs/Chart.js');
 
   return app.toTree([bootstrapFonts, fontawesomeFonts]);
 };
