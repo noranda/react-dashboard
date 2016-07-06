@@ -1,4 +1,5 @@
 import React from 'npm:react';
+import FontAwesome from 'npm:react-fontawesome';
 
 import DateSelector from './DateSelector';
 
@@ -34,8 +35,8 @@ export default class Filter extends Component {
 
   render() {
     return (
-      <form className="filter form-inline" onSubmit={(event) => { event.preventDefault() }}>
-        <div className="form-group">
+      <form className="filter form-inline row" onSubmit={(event) => { event.preventDefault() }}>
+        <div className="form-group col-xs-3 col-xs-offset-1">
           <label htmlFor="filterLocation">Location</label>
 
           <select id="filterLocation" className="form-control" defaultValue="All">
@@ -48,17 +49,29 @@ export default class Filter extends Component {
           </select>
         </div>
 
-        <div className="form-group">
+        <div className="date-select form-group col-xs-2">
           <label htmlFor="filterFrom">From</label>
-          <DateSelector id="filterFrom" value={this.props.fromDate} onChange={this.fromDateChangedFn} />
+          <div className="input-group">
+            <DateSelector id="filterFrom"
+                          value={this.props.fromDate}
+                          onChange={this.fromDateChangedFn}
+                          ariaDescribedBy="icon-addon1" />
+            <span className="input-group-addon" id="icon-addon1"><FontAwesome name="calendar" /></span>
+          </div>
         </div>
 
-        <div className="form-group">
+        <div className="date-select form-group col-xs-2">
           <label htmlFor="filterTo">To</label>
-          <DateSelector id="filterTo" value={this.props.toDate} onChange={this.toDateChangedFn} />
+          <div className="input-group">
+            <DateSelector id="filterTo"
+                          value={this.props.toDate}
+                          onChange={this.toDateChangedFn}
+                          ariaDescribedBy="icon-addon2" />
+            <span className="input-group-addon" id="icon-addon2"><FontAwesome name="calendar" /></span>
+          </div>
         </div>
 
-        <button type="submit" className="btn btn-default">Go</button>
+        <button type="submit" className="btn btn-default col-xs-1">GO</button>
       </form>
     );
   }

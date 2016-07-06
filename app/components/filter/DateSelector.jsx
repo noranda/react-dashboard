@@ -57,7 +57,11 @@ export default class DateSelector extends Component {
 
   render() {
     return (
-      <input type="text" id={this.props.id} ref="datePickerField" />
+      <input className="form-control"
+             type="text"
+             id={this.props.id}
+             ref="datePickerField"
+             aria-describedby={this.props.ariaDescribedBy} />
     );
   }
 }
@@ -70,5 +74,6 @@ DateSelector.propTypes = {
     PropTypes.instanceOf(Date),
     PropTypes.instanceOf(moment)
   ]),
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
+  ariaDescribedBy: PropTypes.string
 };

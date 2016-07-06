@@ -1,0 +1,41 @@
+@import "../variables";
+
+.filter {
+  background-color: $light-gray;
+  border-bottom: 1px solid darken($light-gray, 10%);
+  color: $medium-gray;
+  padding: 25px;
+
+  label {
+    margin-right: 10px;
+  }
+
+  select.form-control {
+    border: none;
+    width: 250px;
+  }
+
+  .date-select {
+    input.form-control {
+      border: none;
+      box-shadow: none;
+    }
+
+    .input-group {
+      width: 160px;
+    }
+
+    .input-group-addon {
+      background-color: $white;
+      border: none;
+    }
+  }
+
+  button {
+    background-color: $medium-orange;
+    border-radius: 20px;
+    border: none;
+    color: $white;
+    width: 60px;
+  }
+}

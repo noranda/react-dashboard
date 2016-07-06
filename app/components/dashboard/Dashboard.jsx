@@ -59,6 +59,7 @@ export default class Dashboard extends Component {
                           <span className="dot" style={{ backgroundColor: material.color }}></span>
                           {material.name} ({material.unit})
                         </div>
+                        
                         <div className="material-value">
                           {numeral(material.value).format('0,0')}
                         </div>
@@ -67,15 +68,18 @@ export default class Dashboard extends Component {
                   })}
                 </div>
               </div>
+
               <div className="col-xs-8">
                 <div>
                   Activity from
                 </div>
+
                 <div>
-                  <span>{this.props.fromDate.format('MM/DD/YYYY')}</span>
-                  todo
-                  <span>{this.props.toDate.format('MM/DD/YYYY')}</span>
+                  <span>{this.props.fromDate.format('MM/DD/YYYY')} </span>
+                  to
+                  <span> {this.props.toDate.format('MM/DD/YYYY')}</span>
                 </div>
+
                 <canvas ref="pieChart" className="pie-chart"></canvas>
               </div>
             </div>
