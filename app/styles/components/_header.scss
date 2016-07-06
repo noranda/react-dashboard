@@ -1,0 +1,24 @@
+@import "../variables";
+
+.dashboard-header {
+  background-color: $white;
+  margin: 30px 0;
+
+  .user-session {
+    color: $medium-gray;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
+
+    .user-session-icon {
+      font-size: 20px;
+      padding-left: 20px;
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .dashboard-header .user-session {
+    text-align: center;
+  }
+}

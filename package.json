@@ -1,0 +1,47 @@
+{
+  "name": "react-dashboard",
+  "version": "0.0.0",
+  "description": "Small description for react-dashboard-ecli goes here",
+  "private": true,
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "ember build",
+    "start": "ember server",
+    "test": "ember test"
+  },
+  "repository": "",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "broccoli-asset-rev": "^2.4.2",
+    "broccoli-funnel": "^1.0.2",
+    "ember-browserify": "1.1.10",
+    "ember-cli": "2.6.2",
+    "ember-cli-babel": "^5.1.6",
+    "ember-cli-dependency-checker": "^1.2.0",
+    "ember-cli-htmlbars": "^1.0.3",
+    "ember-cli-inject-live-reload": "^1.4.0",
+    "ember-cli-jshint": "^1.0.0",
+    "ember-cli-qunit": "^1.4.0",
+    "ember-cli-react": "0.1.1",
+    "ember-cli-release": "^0.2.9",
+    "ember-cli-sass": "5.3.1",
+    "ember-cli-sri": "^2.1.0",
+    "ember-cli-uglify": "^1.2.0",
+    "font-awesome": "^4.6.3",
+    "loader.js": "^4.0.1",
+    "react": "0.14.8",
+    "react-dom": "0.14.8",
+    "react-fontawesome": "^1.1.0",
+    "react-redux": "^4.0.0",
+    "react-router": "^2.0.1",
+    "redux": "^3.0.4"
+  }
+}
