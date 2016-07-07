@@ -46,41 +46,45 @@ export default class Dashboard extends Component {
 
   render() {
     return (
-      <div className="dashboard container">
-        <div className="panel panel-default">
-          <div className="panel-body">
-            <div className="row">
-              <div className="col-xs-4">
-                <div className="list-group">
-                  {this.state.materials.map((material, index) => {
-                    return (
-                      <div key={`material-${index}`} className="list-group-item">
-                        <div className="material-title">
-                          <span className="dot" style={{ backgroundColor: material.color }}></span>
-                          {material.name} ({material.unit})
+      <div className="dashboard">
+        <div className="container">
+          <div className="panel panel-default">
+            <div className="panel-body">
+              <div className="row">
+                <div className="dashboard-list col-sm-4 col-xs-12">
+                  <div className="list-group">
+                    {this.state.materials.map((material, index) => {
+                      return (
+                        <div key={`material-${index}`} className="list-group-item">
+                          <div className="material-title">
+                            <span className="dot" style={{ backgroundColor: material.color }}></span>
+                            {material.name} ({material.unit})
+                          </div>
+
+                          <div className="material-value">
+                            {numeral(material.value).format('0,0')}
+                          </div>
                         </div>
-                        
-                        <div className="material-value">
-                          {numeral(material.value).format('0,0')}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div className="col-xs-8">
-                <div>
-                  Activity from
+                      );
+                    })}
+                  </div>
                 </div>
 
-                <div>
-                  <span>{this.props.fromDate.format('MM/DD/YYYY')} </span>
-                  to
-                  <span> {this.props.toDate.format('MM/DD/YYYY')}</span>
-                </div>
+                <div className="dashboard-chart col-sm-8 col-xs-12">
+                  <div className="activity">
+                    <div className="activity-label">
+                      Activity from
+                    </div>
 
-                <canvas ref="pieChart" className="pie-chart"></canvas>
+                    <div>
+                      <span className="activity-date">{this.props.fromDate.format('MM/DD/YYYY')} </span>
+                      <span className="activity-label">to</span>
+                      <span className="activity-date"> {this.props.toDate.format('MM/DD/YYYY')}</span>
+                    </div>
+                  </div>
+
+                  <canvas ref="pieChart" className="pie-chart"></canvas>
+                </div>
               </div>
             </div>
           </div>

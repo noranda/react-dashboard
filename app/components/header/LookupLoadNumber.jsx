@@ -8,7 +8,7 @@ export default class LookupLoadNumber extends Component {
     return (
       <div className="lookup-load-number-search">
         <div className="search input-group">
-          <input type="text" value="" className="form-control" placeholder="Lookup Load Number"></input>
+          <input type="text" className="form-control" placeholder="Lookup Load Number"></input>
 
           <span className="input-group-btn">
             <button className="btn btn-default" type="button">

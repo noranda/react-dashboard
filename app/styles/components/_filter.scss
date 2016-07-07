@@ -5,29 +5,43 @@
   border-bottom: 1px solid darken($light-gray, 10%);
   color: $medium-gray;
   padding: 25px;
+  padding-right: 0;
 
   label {
     margin-right: 10px;
   }
 
-  select.form-control {
+  .input-container {
+    display: inline-block;
+  }
+
+  select.form-control,
+  input.form-control {
     border: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: $medium-gray;
+  }
+
+  select.form-control {
     width: 250px;
   }
 
   .date-select {
     input.form-control {
-      border: none;
       box-shadow: none;
     }
 
     .input-group {
-      width: 160px;
+      width: 120px;
     }
 
     .input-group-addon {
       background-color: $white;
       border: none;
+      padding: 9px;
+      font-size: 0.9em;
+      color: $medium-gray;
     }
   }
 
@@ -37,5 +51,55 @@
     border: none;
     color: $white;
     width: 60px;
+    font-size: 10px;
+    height: 35px;
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  .filter {
+    label {
+      display: block;
+    }
+
+    button {
+      margin-top: 23px;
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .filter {
+    padding: 25px 0;
+
+    .form-group {
+      @include make-row;
+    }
+
+    label {
+      display: block;
+      text-align: right;
+      margin: 0;
+      padding-top: ($padding-base-vertical + 1);
+
+      @include make-xs-column(4);
+    }
+
+    .input-container {
+      display: block;
+
+      @include make-xs-column(6);
+    }
+
+    .date-select .input-group,
+    select.form-control,
+    input.form-control {
+      width: 100%;
+    }
+
+    .btn {
+      @include make-xs-column(6);
+      @include make-xs-column-push(3);
+    }
   }
 }

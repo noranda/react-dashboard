@@ -1,6 +1,112 @@
 .dashboard {
+  background-color: $gray;
+
+  .panel-default {
+    margin: 50px 0;
+
+    .panel-body {
+      padding: 0 15px;
+
+      .dashboard-list {
+        padding-left: 0;
+
+        .list-group {
+          margin: 0;
+
+          .list-group-item {
+            height: 110px;
+            border-radius: 0;
+            border-left: none;
+            padding: 25px;
+
+            &:first-of-type {
+              border-top: none;
+              border-top-left-radius: 4px;
+            }
+
+            &:last-of-type {
+              border-bottom: none;
+              border-bottom-left-radius: 4px;
+            }
+
+            .material-title {
+              text-transform: uppercase;
+              color: lighten($medium-gray, 20%);
+              font-size: 0.8em;
+              font-weight: bold;
+
+              .dot {
+                display: inline-block;
+                height: 8px;
+                width: 8px;
+                border-radius: 50%;
+                margin-right: 5px;
+              }
+            }
+
+            .material-value {
+              font-size: 2.5em;
+            }
+          }
+        }
+      }
+
+      .dashboard-chart {
+        padding: 30px 15px;
+
+        .activity {
+          font-size: 0.9em;
+          font-weight: bold;
+
+          .activity-label {
+            color: lighten($medium-gray, 20%);
+          }
+
+          .activity-date {
+            color: $medium-gray;
+          }
+        }
+      }
+    }
+  }
+
   canvas.pie-chart {
     width: 100%;
     height: auto;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .dashboard {
+    .panel-default {
+      .panel-body {
+        .dashboard-list {
+          padding-right: 0;
+
+          .list-group {
+            .list-group-item {
+              text-align: center;
+              border-right: none;
+
+              &:first-of-type {
+                border-top-right-radius: 4px;
+              }
+
+              &:last-of-type {
+                border-bottom: 1px solid $gray;
+                border-bottom-left-radius: 0;
+              }
+            }
+          }
+        }
+
+        .dashboard-chart {
+          .activity {
+            text-align: center;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
   }
 }

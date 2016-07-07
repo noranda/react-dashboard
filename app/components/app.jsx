@@ -28,8 +28,13 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <div className="visible-xs-block">
+          <Nav />
+        </div>
         <Header />
-        <Nav />
+        <div className="hidden-xs">
+          <Nav />
+        </div>
         <Filter fromDate={this.state.fromDate} toDate={this.state.toDate} onFilterChange={this.filterChangedFn} />
         <Dashboard fromDate={this.state.fromDate} toDate={this.state.toDate} />
       </div>
