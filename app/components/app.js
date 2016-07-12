@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import Header from './header/Header';
 import Nav from './Nav';
 import Filter from './filter/Filter';
-import Dashboard from './dashboard/Dashboard';
-import Details from './details/Details';
+import Dashboard from './Dashboard';
+import Details from './Details';
 import Footer from './Footer';
 
 export default class App extends Component {
