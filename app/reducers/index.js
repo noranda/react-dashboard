@@ -1,6 +1,4 @@
-import redux from 'npm:redux';
-
-const combineReducers = redux.combineReducers;
+import { combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
   state: (state = {}) => state

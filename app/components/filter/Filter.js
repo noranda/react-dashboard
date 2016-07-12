@@ -1,9 +1,7 @@
-import React from 'npm:react';
-import FontAwesome from 'npm:react-fontawesome';
+import React, { Component, PropTypes } from 'react';
+import FontAwesome from 'react-fontawesome';
 
 import DateSelector from './DateSelector';
-
-const { Component, PropTypes } = React;
 
 export default class Filter extends Component {
   constructor(props) {

@@ -1,8 +1,5 @@
-import React from 'npm:react';
-import FontAwesome from 'npm:react-fontawesome';
-
-const { Component } = React;
-const { numeral } = window;
+import React, { Component } from 'react';
+import FontAwesome from 'react-fontawesome';
 
 export default class Details extends Component {
   constructor(props) {

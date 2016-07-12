@@ -1,7 +1,4 @@
-import React from 'npm:react';
-
-const { Component, PropTypes } = React;
-const { Pikaday, moment } = window;
+import React, { Component, PropTypes } from 'react';
 
 const DEFAULT_FORMAT = 'MM/DD/YYYY';
 

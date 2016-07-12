@@ -1,9 +1,7 @@
-import React from 'npm:react';
+import React, { Component } from 'react';
 
 import LookupLoadNumber from './LookupLoadNumber';
 import UserSession from './UserSession';
-
-const { Component } = React;
 
 export default class Header extends Component {
   render() {

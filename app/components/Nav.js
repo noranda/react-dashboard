@@ -1,7 +1,5 @@
-import React from 'npm:react';
-import FontAwesome from 'npm:react-fontawesome';
-
-const { Component } = React;
+import React, { Component } from 'react';
+import FontAwesome from 'react-fontawesome';
 
 export default class Nav extends Component {
   render() {

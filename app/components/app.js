@@ -1,13 +1,10 @@
-import React from 'npm:react';
+import React, { Component } from 'react';
 
 import Header from './header/Header';
 import Nav from './Nav';
 import Filter from './filter/Filter';
 import Dashboard from './dashboard/Dashboard';
 import Details from './details/Details';
-
-const { Component } = React;
-const { moment } = window;
 
 export default class App extends Component {
   constructor(props) {
