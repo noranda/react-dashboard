@@ -5,6 +5,7 @@ import Nav from './Nav';
 import Filter from './filter/Filter';
 import Dashboard from './dashboard/Dashboard';
 import Details from './details/Details';
+import Footer from './Footer';
 
 export default class App extends Component {
   constructor(props) {
@@ -36,6 +37,7 @@ export default class App extends Component {
         <Filter fromDate={this.state.fromDate} toDate={this.state.toDate} onFilterChange={this.filterChangedFn} />
         <Dashboard fromDate={this.state.fromDate} toDate={this.state.toDate} />
         <Details />
+        <Footer />
       </div>
     );
   }

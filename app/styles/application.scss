@@ -1,11 +1,13 @@
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "~pikaday/scss/pikaday";
+
 @import "variables";
 @import "mixins/mixins";
+@import "components/dashboard";
+@import "components/details";
+@import "components/filter";
+@import "components/footer";
 @import "components/header";
 @import "components/nav";
-@import "components/dashboard";
-@import "components/filter";
-@import "components/details";
 @import "elements/search";
