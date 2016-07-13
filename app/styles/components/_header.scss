@@ -1,6 +1,6 @@
 @import "../variables";
 
-.dashboard-header {
+.header {
   background-color: $white;
   margin: 30px 0;
 
@@ -17,8 +17,8 @@
   }
 }
 
-@media (max-width: $screen-xs-max) {
-  .dashboard-header .user-session {
+@media (max-width: $screen-sm-max) {
+  .header .user-session {
     text-align: center;
   }
 }

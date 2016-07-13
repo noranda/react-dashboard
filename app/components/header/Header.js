@@ -6,11 +6,12 @@ import UserSession from './UserSession';
 export default class Header extends Component {
   render() {
     return (
-      <header className="row dashboard-header">
-        <div className="col-sm-5 col-sm-offset-1 col-sm-push-6 col-xs-12">
+      <header className="row header">
+        <div className="col-md-5 col-md-offset-1 col-md-push-6">
           <UserSession />
         </div>
-        <div className="col-sm-4 col-sm-offset-2 col-sm-pull-6 col-xs-12">
+
+        <div className="col-md-4 col-md-offset-2 col-md-pull-6">
           <LookupLoadNumber />
         </div>
       </header>

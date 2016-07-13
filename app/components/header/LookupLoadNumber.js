@@ -4,7 +4,7 @@ import FontAwesome from 'react-fontawesome';
 export default class LookupLoadNumber extends Component {
   render() {
     return (
-      <div className="lookup-load-number-search">
+      <div className="lookup-load-number">
         <div className="search input-group">
           <input type="text" className="form-control" placeholder="Lookup Load Number"></input>
 
